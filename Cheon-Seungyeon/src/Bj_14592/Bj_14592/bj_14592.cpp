@@ -15,10 +15,10 @@ struct cmp {
 	bool operator()(Students s1, Students s2) {
 		if (s1.score == s2.score) {
 			if (s1.attempt == s2.attempt) {
-				return s1.time < s2.time;
+				return s1.time > s2.time;
 			}
 			else {
-				return s1.attempt < s2.attempt;
+				return s1.attempt > s2.attempt;
 			}
 		}
 		else {
